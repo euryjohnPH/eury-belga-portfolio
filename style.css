@@ -97,7 +97,7 @@ header {
 }
 h1 {
     font-weight: 500!important;
-    font-size: 1.5em!important;
+    font-size: 1.3em!important;
     color: #212529;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -108,7 +108,7 @@ h1 {
 }
 
 h1 > span {
-    font-size: 0.7em!important;
+    font-size: 0.5rem!important;
 }
 h1 a {
     color:#212529;
@@ -121,7 +121,7 @@ h2 {
 }
 h3 {
     font-size: 1.5em!important;
-    color: #212529;
+    color: #212529!important;
 }
 .custom-text {
     font-size: 1.1em!important;
@@ -446,8 +446,8 @@ figure {
     font-size: 0.8em!important;
     margin-top: -7px;
 }
-.user h3 {
-    color:white;
+.user > h3 {
+    color:white!important;
 }
 .review-content {
     display: flex;
@@ -462,9 +462,9 @@ figure {
 #reviews figure {
     height:100%;
 }
-.review-content p {
+.review-content > p {
     text-align: center;
-    font-size: 1.1rem!important;
+    font-size: 1rem!important;
 }
 .headline img {
     max-width: 60px;
