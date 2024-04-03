@@ -446,8 +446,8 @@ figure {
     font-size: 0.8em!important;
     margin-top: -7px;
 }
-.user h3 {
-    color:white;
+.user > h3 {
+    color:white!important;
 }
 .review-content {
     display: flex;
