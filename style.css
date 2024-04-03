@@ -176,11 +176,6 @@ nav li:last-child a {
     background-color: #3c63cd;
 }
 
-nav li:last-child a:hover {
-    background-color: #27187e;
-    transition: 0.3s;
-}
-
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -192,10 +187,8 @@ nav ul {
 
 nav ul a:nth-of-type(1):hover,
 nav ul a:nth-of-type(2):hover {
-    scale: 105%;
     transition: 0.3s;
     color: #3c63cd;
-    font-weight: 700;
 }
 
 nav .btn {
@@ -407,16 +400,16 @@ main {
     flex-wrap: wrap;
 }
 /*sidebar project accordion*/
+#sidebar video {
+    border:none;
+    clip-path: inset(1px 1px);
+}
 #sidebar-accordion,
 #sidebar-accordion-contacts {
     flex: 0 0 35%;
     align-self: flex-start;
     width: 350px;
     border-radius: 20px;
-}
-
-#sidebar-accordion img {
-    max-width: 50%;
 }
 
 #sidebar-accordion .accordion-body {
@@ -605,7 +598,7 @@ main {
 
 .user img {
     border: none;
-    max-width: 130px;
+    max-width: 120px;
 }
 
 .review-overview {
