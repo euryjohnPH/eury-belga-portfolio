@@ -121,7 +121,7 @@ h2 {
 }
 h3 {
     font-size: 1.5em!important;
-    color: #212529;
+    color: #212529!important;
 }
 .custom-text {
     font-size: 1.1em!important;
@@ -462,9 +462,9 @@ figure {
 #reviews figure {
     height:100%;
 }
-.review-content p {
+.review-content > p {
     text-align: center;
-    font-size: 1.1rem!important;
+    font-size: 1rem!important;
 }
 .headline img {
     max-width: 60px;
