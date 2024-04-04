@@ -43,7 +43,7 @@ button::after,
 }
 
 /* Specific Button Styles */
-#introduction-page button::after,
+#introduction-page .button-ahref::after,
 .modal-header button::after,
 #jumbotron button::after,
 footer button::after,
