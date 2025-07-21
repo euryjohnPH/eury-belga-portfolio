@@ -1,0 +1,346 @@
+/* -------------------------
+   Global Reset & Base Styles
+-------------------------- */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------------
+   Layout Padding Utilities
+-------------------------- */
+.primary {
+    padding: 112px 96px !important;
+}
+
+.primary {
+    width: 60% !important;
+}
+
+.secondary {
+    padding: 80px 24px;
+    width: 100%;
+}
+
+.sm-padding {
+    padding: 20px 24px !important;
+}
+
+/* -------------------------
+   Color Classes
+-------------------------- */
+.primary-color {
+    background-color: #CDE0EB;
+}
+
+.secondary-color {
+    background-color: #0b3558;
+    color: #fff;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+.white-bg {
+    background-color: #fff!important;
+}
+.default-bg {
+    background: #f8f9fb !important;
+    ;
+}
+.modal {
+    color: #000 !important;
+}
+/* -------------------------
+   Typography
+-------------------------- */
+h1 {
+    font-size: 68px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 36px;
+}
+
+.custom-h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.subtext-p {
+    font-size: 1.3em;
+}
+
+section p {
+    font-size: 1.125rem;
+}
+#experiences p {
+    font-size:1rem!important;
+}
+.date-exp {
+    font-size: 0.85em !important;
+    color: #707070;
+}
+
+/* -------------------------
+   Cards
+-------------------------- */
+.cards {
+    width: 350px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.services-card {
+    border: 1px solid #fff;
+}
+
+.testimonials-card {
+    background: #fff;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.services-card p,
+.testimonials-card p {
+    font-size: 1rem;
+}
+
+/* -------------------------
+   Contact Banner
+-------------------------- */
+.contact-banner {
+    width: 50% !important;
+}
+
+.contact-banner h2,
+.contact-banner p {
+    text-align: center;
+}
+
+/* -------------------------
+   Flex Layouts
+-------------------------- */
+.byrow-layout {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1em;
+}
+
+.primary .byrow-layout {
+    align-items: center;
+    gap: 2em;
+    flex-wrap: nowrap;
+}
+
+.bycolumn-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* -------------------------
+   Layout Containers
+-------------------------- */
+.primary>.text-container {
+    flex-basis: 50%;
+    max-width: 600px;
+}
+
+.byrow-layout .text-container {
+    flex-basis: 40%;
+}
+
+.byrow-layout .accordion-container {
+    flex-basis: 60%;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.primary .byrow-layout>div:nth-child(2) {
+    flex-basis: 50%;
+}
+
+.experiences .byrow-layout {
+    align-items: flex-start;
+    gap: 0.5em;
+    padding: 20px 0px;
+}
+
+/* -------------------------
+   Specific Components
+-------------------------- */
+.experience-info p {
+    margin: 5px 0px !important;
+}
+
+.experiences {
+    width: 30%;
+}
+
+.testimonials-container,
+.services-container {
+    width: 50%;
+    margin-bottom: 36px;
+}
+
+.testimonial-user {
+    margin-bottom: 0 !important;
+}
+
+.testimonial-user img {
+    width: 70px;
+    margin-bottom: 24px;
+    border-radius: 100%;
+}
+.shadow-box-soft {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------
+   Images
+-------------------------- */
+.primary-image img {
+    width: 900px;
+    height: auto;
+}
+
+.logo-wall {
+    display: flex;
+    width: 100%;
+    gap: 4em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-wall img {
+    max-width: 80px;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+}
+
+.standard-aspect-ratio {
+    object-fit: contain;
+    aspect-ratio: 4 / 3;
+    width: 70px !important;
+}
+.contact-icon img {
+    width:20px;
+    height:20px;
+    margin-right:24px;
+}
+.contac-icon img:nth-child(3) {
+    margin-right: 0!important;
+}
+/* -------------------------
+   Buttons
+-------------------------- */
+button {
+    padding: 10px 20px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    border: none;
+    background-color: #3c63cd;
+    color: #fff;
+}
+
+.group-btn {
+    margin-top: 24px;
+    display: flex;
+    gap: 0.8rem;
+}
+
+/* -------------------------
+   Responsive: Tablets
+-------------------------- */
+@media only screen and (max-width: 1280px) {
+    .primary {
+        padding: 40px 24px;
+        width: 100% !important;
+    }
+
+    
+
+    .primary-image img {
+        min-width: 400px;
+        max-width: 400px;
+        margin-top: 36px !important;
+    }
+
+    .logo-wall img {
+        max-width: 60px;
+    }
+
+    .standard-aspect-ratio {
+        width: 40px !important;
+    }
+
+    .experience-info .byrow-layout .text-container,
+    .experiences .byrow-layout .accordion-container {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .experiences,
+    .testimonials-container {
+        width: 100%;
+    }
+
+    .services-container {
+        gap: 1em;
+        width: 100% !important;
+    }
+}
+
+/* -------------------------
+   Responsive: Mobile
+-------------------------- */
+@media only screen and (max-width: 400px) {
+
+    h1 {
+       font-size:40px;
+    }
+    h2 {
+         font-size:36px;
+    }
+    .byrow-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primary-image img {
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    section.primary {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .contact-banner {
+        width: 100% !important;
+    }
+}
